@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+
+  "name": "Extension name",
+  "version": "0.0.1",
+
+  "description": "Extension description.",
+  "author": "John Doe",
+
+  "icons": {
+    "16": "assets/icons/extension_16.png",
+    "48": "assets/icons/extension_48.png",
+    "128": "assets/icons/extension_128.png"
+  },
+
+  "action": {
+    "default_icon": {
+      "19": "assets/icons/browser-action_19.png",
+      "38": "assets/icons/browser-action_38.png"
+    }
+  },
+
+  "background": {
+    "service_worker": "service_worker.js"
+  },
+
+  "host_permissions": ["<all_urls>"],
+  "permissions": ["scripting"]
+}
